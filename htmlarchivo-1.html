@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IntelliCloud - Plataforma de evaluación de proyectos de inversión">
+    <meta name="keywords" content="evaluación de proyectos, inversión, economía, startups, contaduría, administración de empresas">
+    <title>IntelliCloud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">IntelliCloud</div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#evaluation">Evaluación</a></li>
+                <li><a href="#analysis">Análisis</a></li>
+                <li><a href="#results">Resultados</a></li>
+                <li><a href="#register">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Bienvenido a IntelliCloud</h1>
+            <p>Plataforma avanzada para la evaluación de proyectos de inversión.</p>
+            <a href="#evaluation" class="btn-primary">Comenzar</a>
+        </div>
+    </section>
+
+    <section id="evaluation">
+        <h2>Evaluación de Proyectos</h2>
+        <form id="evaluation-form">
+            <label for="initial-investment">Inversión Inicial:</label>
+            <input type="number" id="initial-investment" name="initial-investment" required>
+            
+            <label for="cash-flows">Flujos de Caja (separados por comas):</label>
+            <input type="text" id="cash-flows" name="cash-flows" required>
+            
+            <label for="discount-rate">Tasa de Descuento (%):</label>
+            <input type="number" id="discount-rate" name="discount-rate" required>
+            
+            <button type="submit" class="btn-primary">Calcular VAN y TIR</button>
+        </form>
+        <div id="results">
+            <h3>Resultados:</h3>
+            <p id="van-result">VAN: </p>
+            <p id="tir-result">TIR: </p>
+        </div>
+    </section>
+
+    <section id="analysis">
+        <h2>Análisis de Riesgo e Incertidumbre</h2>
+        <!-- Aquí se implementarán las simulaciones y análisis de sensibilidad -->
+    </section>
+
+    <section id="results">
+        <h2>Descarga de Resultados</h2>
+        <p>Descarga tus reportes en PDF o Excel.</p>
+        <button class="btn-primary">Descargar Reporte Completo</button>
+    </section>
+
+    <section id="register">
+        <h2>Registro</h2>
+        <p>Regístrate para guardar tus proyectos y resultados.</p>
+        <button class="btn-primary">Registrarse con Google</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IntelliCloud. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
